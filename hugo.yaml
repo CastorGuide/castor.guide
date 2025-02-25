@@ -1,3 +1,28 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://castor.guide
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    contentDir: content/en
+    disabled: false
+    languageCode: en-CA
+    languageDirection: ltr
+    languageName: English
+    params:
+      subtitle: United States Boycott
+    title: Castor Guide
+    weight: 1
+  fr:
+    contentDir: content/fr
+    disabled: false
+    languageCode: fr-CA
+    languageDirection: ltr
+    languageName: Français
+    params:
+      subtitle: Boycott des États-Unis
+    title: Guide Castor
+    weight: 2
+theme: ["PaperMod"]
+
+minify:
+  disableXML: true
+  minifyOutput: true
